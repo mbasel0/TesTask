@@ -1,0 +1,19 @@
+.InputBar {
+  width: 100%;
+  input {
+    border-radius: 8px;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding: 8px 15px;
+    width: calc(100% - 105px);
+    outline: none;
+    &:hover {
+      background: #f3f3f3;
+    }
+
+  }
+  .inputSrc {
+    display: inline;
+    padding-left: 5px;
+  }
+}

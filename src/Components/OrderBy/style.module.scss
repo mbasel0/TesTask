@@ -1,0 +1,30 @@
+.orderBy {
+  display: none !important;
+}
+.dDown {
+  background: transparent !important;
+  color: #484848 !important;
+  font-weight: 600;
+  border: none !important;
+  font-size: 16px;
+  &::after {
+    display: none !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.dDownItem {
+  width: 100%;
+  color: #000000;
+  background: none;
+  border-radius: 5px !important;
+  &:hover {
+    background: #c4c4c4 !important
+    ;
+  }
+
+}
+.dDownMenu{
+    inset: 0px auto auto 130px !important;
+}

@@ -1,0 +1,60 @@
+.list {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  .rData {
+    display: inline-flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .outInputBar {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 600px;
+    input{
+        padding: 10px;
+    }
+  }
+  .tesLogo {
+    margin-top: 20px;
+    img {
+      width: 160px;
+      height: 70px;
+    }
+  }
+  .outOrderBy{
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+.renderedResults {
+  padding: 0 !important;
+  width: 600px;
+}
+.itemList{
+  width: 600px;
+  min-height: 520px;
+}
+.previous{
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #484848;
+  font-weight: 600;
+  font-size: 14px;
+}
+.next{
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #484848;
+  font-weight: 600;
+  font-size: 14px;
+}
+.isActive{
+  background-color: blue;
+}

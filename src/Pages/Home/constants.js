@@ -1,0 +1,1 @@
+export const SEARCH = "/app/Home/SEARCH"

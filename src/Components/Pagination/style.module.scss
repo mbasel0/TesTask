@@ -1,0 +1,16 @@
+.Pagination {
+  width: calc(100% - 200px);
+  display: inline;
+  padding: 0 6px;
+  button{
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #484848;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  span {
+    padding: 0 10px;
+  }
+}
