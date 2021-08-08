@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import PropTypes, { func, string } from "prop-types";
@@ -30,6 +30,7 @@ export function List({ index }) {
   let query = useQuery();
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
+
 
   const [srcValue, setSrcValue] = useState(query.get("src"))
   const [orderType, setOrderType] = useState();
@@ -108,15 +109,6 @@ export function List({ index }) {
     }
   }
 
-  const isActive = () => {
-    if(currentPage === index){
-      var v = document.getElementById("x");
-            v.classList.add("isActive");
-    }
-  }
- 
-
-
 
   const rData = () => {
     if (inputValue.length <= 0) {
@@ -133,10 +125,13 @@ export function List({ index }) {
         )}
       </div>
       <div>
+
         {currentPage !== 1 && <button className={styles.previous} onClick={previous}>Previous</button>}
         {
           Array(pageLimit).fill().map((item, index) =>
-            <Pagination onClick={setCurrentPage} index={index + 1} currentPage={currentPage}  />
+            < Pagination onClick={(x)=>{
+              setCurrentPage(x)
+            }}  index={index + 1} currentPage={currentPage}  />
           )}
         {pageLimit !== currentPage && <button className={styles.next} onClick={next}>Next</button>}
       </div>

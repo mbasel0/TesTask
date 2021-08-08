@@ -7,7 +7,8 @@ export default function OrderBy({ setOrder }) {
     <div className={styles.OrderBy} >
       <Dropdown onSelect={setOrder} className={"mt-2 d-flex ml-2"} >
         <Dropdown.Toggle className={styles.dDown}>
-          {"\uD83E\uDC21"} {"\uD83E\uDC23"}  Order By
+          <span className={styles.dArrows}> {"\uD83E\uDC21"}{"\uD83E\uDC23"} </span>
+          Order By
         </Dropdown.Toggle>
         <Dropdown.Menu className={styles.dDownMenu} >
           <Dropdown.Item className={styles.dDownItem} eventKey="lowerW"> Name ascending </Dropdown.Item>

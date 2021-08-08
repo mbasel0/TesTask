@@ -19,11 +19,14 @@
     &:hover {
       background: #c4c4c4;
       cursor: pointer;
+      .resultsBottom span {
+        color: #ffffff;
+      }
     }
   }
+
   .results {
     border-bottom: 2px solid #d5d5d5;
-
     margin-bottom: 10px;
 
     .resultsTop {
@@ -34,6 +37,11 @@
     .resultsBottom {
       display: flex;
       align-items: flex-start;
+
+      span {
+        font-size: 13px;
+        color: #686868;
+      }
     }
   }
 }

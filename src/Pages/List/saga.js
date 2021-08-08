@@ -7,7 +7,6 @@ import {
   loadSuccess,
   loading,
 } from "../../Components/Spinner/actions";
-//import request from "../../utils/request";
 import ApiStore from "../../utils/request";
 
 
@@ -22,6 +21,5 @@ export function* postDataSaga(action) {
 }   
 
 export default function* ListSaga() {
-
   yield takeLatest(POST_DATA, postDataSaga);
 }
